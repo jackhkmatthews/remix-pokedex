@@ -1,4 +1,5 @@
 import {
+  Link,
   Links,
   Meta,
   Outlet,
@@ -17,7 +18,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <header className="border-b-2 border-b-gray-200 text-center">
+          <Link to="/">Remix Pokedex</Link>
+        </header>
+        <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
       </body>
