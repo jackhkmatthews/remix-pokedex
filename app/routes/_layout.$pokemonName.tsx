@@ -32,7 +32,7 @@ export default function PokemonDetailPage() {
       <p>Height: {loaderData.data.height}</p>
       <p>Weight: {loaderData.data.weight}</p>
       <img
-        className="max-w-2xl"
+        className="max-w-2xl w-full p-2"
         src={loaderData.data.sprites.other["official-artwork"].front_default}
         alt={loaderData.data.name}
       />

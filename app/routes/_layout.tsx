@@ -125,6 +125,7 @@ export default function Index() {
                   1}
                 .{" "}
                 <Link
+                  preventScrollReset
                   to={`/${encodeURIComponent(pokemon.name)}${location.search}`}
                 >
                   {pokemon.name}
